@@ -309,3 +309,67 @@ print(calendar.weekday(2025,3,13))
 print(calendar.isleap(2000))
 print(calendar.calendar(2026,2,2,3,4))
 
+# Find HCF between two numbers
+
+n1 = int(input("Enter a first value: "))
+n2 = int(input("Enter second value: "))
+
+length = max(n1,n2)
+List = []
+
+for i in range(1,length):
+    if(n1%i==0 and n2%i==0):
+        List.append(i)
+
+print(f"{n1},{n2} of high common factor is: ",max(List))
+
+
+# Find LCM between two numbers
+
+n1 = int(input("Enter a first value: "))
+n2 = int(input("Enter second value: "))
+
+length = max(n1,n2)
+
+while(True):
+    if(length%n1==0 and length%n2==0):
+        lcm = length
+        print(f"{n1},{n2} of least common factor is: ",lcm)
+        break
+    length+=1
+
+
+# ASCII => American Standard Code for Internation Interchange
+
+name = 'John'
+ascii_List=[]
+for i in name:
+    ascii_List.append(ord(i))
+print(ascii_List)
+
+recycle_name = ""
+for i in ascii_List:
+    recycle_name+=chr(i)
+    
+print(recycle_name)
+
+# Profit or loss in percentage
+
+actuall_cost = float(input("Enter a actuall cost value: "))
+selling_cost = float(input("Enter a celling cost value: "))
+
+if(selling_cost>actuall_cost):
+    profit = ((selling_cost - actuall_cost)/actuall_cost)*100
+    print("Profit percentage is: ",profit)
+elif(selling_cost==actuall_cost):
+    print("No profit! , No loss!")
+else:
+    loss = ((actuall_cost-selling_cost)/actuall_cost)*100
+    print("Loss percentage is: ",loss)
+
+# How to get random number from list
+
+import random
+
+List = [78,26,92,11,87,45,66,50]
+print(random.choice(List))
