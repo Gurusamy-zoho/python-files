@@ -1,5 +1,5 @@
 
-ARRAY PROBLEMS IN TUTORIAL GATEWAY
+################ ARRAY PROBLEMS IN TUTORIAL GATEWAY ######################
 
 
 # Python Program to Perform Arithmetic Operations on Array
@@ -269,5 +269,129 @@ rotated = list[-n:] + list[:-n]
 
 print(rotated)
 
+
+
+
+
+
+############# Print Array Items ##################
+
+# Python program to Print Even Numbers in an Array
+
+import numpy as np
+RangeVal = int(input("Enter a range value: "))
+Elements = []
+
+for i in range(0,RangeVal):
+    Elements.append(int(input("Enter a elements: ")))
+    
+array = np.array(Elements)
+EvenNumber = array[array%2==0]
+
+print(EvenNumber)
+
+# Python program to Print Odd Numbers in an Array
+import numpy as np
+RangeVal = int(input("Enter a range value: "))
+Elements = []
+
+for i in range(0,RangeVal):
+    Elements.append(int(input("Enter a elements: ")))
+    
+array = np.array(Elements)
+EvenNumber = array[array%2!=0]
+
+print(EvenNumber)
+
+# Python program to Print Negative Numbers in an Array
+
+import numpy as np
+RangeVal = int(input("Enter a range value: "))
+Elements = []
+
+for i in range(0,RangeVal):
+    Elements.append(int(input("Enter a elements: ")))
+    
+array = np.array(Elements)
+NegativeNumber = array[array<0]
+
+print(NegativeNumber)
+
+# Python program to Print Array Items
+import numpy as np
+RangeVal = int(input("Enter a range value: "))
+Elements = []
+
+for i in range(0,RangeVal):
+    Elements.append(int(input("Enter a elements: ")))
+    
+array = np.array(Elements)
+print(array)
+
+# Python Program to Print Array Elements in Reverse Order
+import numpy as np
+RangeVal = int(input("Enter a range value: "))
+Elements = []
+
+for i in range(0,RangeVal):
+    Elements.append(int(input("Enter a elements: ")))
+    
+array = np.array(Elements)
+reversedArray = array[::-1]
+print(reversedArray)
+
+# Python Program to Print Array Elements Present on Even Position
+import numpy as np
+RangeVal = int(input("Enter a range value: "))
+Elements = []
+
+for i in range(0,RangeVal):
+    Elements.append(int(input("Enter a elements: ")))
+    
+array = np.array(Elements)
+EvenPosition= array[::2]
+
+print(EvenPosition)
+
+# Python Program to Print Array Elements Present on Odd Position
+import numpy as np
+RangeVal = int(input("Enter a range value: "))
+Elements = []
+
+for i in range(0,RangeVal):
+    Elements.append(int(input("Enter a elements: ")))
+    
+array = np.array(Elements)
+OddPosition = array[1::2]
+print(OddPosition)
+
+# Python program to Print Positive Numbers in an Array
+
+import numpy as np
+RangeVal = int(input("Enter a range value: "))
+Elements = []
+
+for i in range(0,RangeVal):
+    Elements.append(int(input("Enter a elements: ")))
+    
+array = np.array(Elements)
+PostiveNumber = array[array>0]
+
+print(PositiveNumber)
+
+# Python program to Print Unique Items in an Array
+
+size = int(input("Enter the size of the array: "))
+
+elements = []
+for i in range(size):
+    elements.append(int(input(f"Enter element {i + 1}: ")))
+
+unique_elements = []
+for i in elements:
+    if i not in unique_elements:
+        unique_elements.append(i)
+
+print("Unique elements in the array:", unique_elements)
 
 
