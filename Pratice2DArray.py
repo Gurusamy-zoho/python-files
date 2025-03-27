@@ -145,3 +145,17 @@ print(transposed)
 #     Compute the row-wise and column-wise mean of a 2D array.
 
 #     Swap two specific rows in a 2D array.
+
+
+
+# Intermediate Level:
+
+#     Find the diagonal sum of a square 2D array.
+
+#     Rotate a 2D array 180 degrees.
+
+#     Remove duplicate rows from a 2D array.
+
+#     Implement Conway's Game of Life for one iteration.
+
+#     Find the saddle point of a 2D array (an element that is the minimum in its row and maximum in its column, or vice versa).
