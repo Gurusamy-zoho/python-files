@@ -123,3 +123,25 @@ for i in range(len(transposeMatrix)):
     for j in range(len(transposeMatrix[i])):
         transposed[j][i] = transposeMatrix[i][j]
 print(transposed)
+
+# Lower Intermediate Level:
+
+#     Multiply two 2D arrays (matrices) of compatible sizes.
+
+#     Check if a given 2D array is symmetric.
+
+#     Rotate a 2D array 90 degrees clockwise.
+
+#     Flatten a 2D array into a 1D list.
+
+#     Reverse all rows of a 2D array.
+
+#     Reverse all columns of a 2D array.
+
+#     Check if a given 2D array is a square matrix.
+
+#     Create a spiral matrix of size NxN (e.g., for N=3, output: [[1,2,3],[8,9,4],[7,6,5]]).
+
+#     Compute the row-wise and column-wise mean of a 2D array.
+
+#     Swap two specific rows in a 2D array.
